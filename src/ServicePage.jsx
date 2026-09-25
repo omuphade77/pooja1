@@ -23,7 +23,7 @@ const serviceContent = {
   'Kaal Sarp Dosh Nivaran Puja': {
     focus: 'A dedicated Kaal Sarp Shanti service at Trimbakeshwar for devotees seeking a properly guided, personal ritual.',
     duration: 'Approximately three to four hours',
-    process: ['Free initial Kundali discussion', 'Sankalp and Naag pujan', 'Havan, blessings, and next-step guidance'],
+    process: ['initial Kundali discussion', 'Sankalp and Naag pujan', 'Havan, blessings, and next-step guidance'],
     benefits: ['Individual rather than batch-based vidhi', 'Help choosing a suitable muhurat', 'Clear travel and preparation guidance'],
   },
 }
