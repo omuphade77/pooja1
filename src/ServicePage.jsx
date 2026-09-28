@@ -77,6 +77,18 @@ export default function ServicePage({ title, image, phone, whatsapp, onBack }) {
       <section className="service-faq"><p className="kicker">COMMON QUESTIONS</p><h2>{title} FAQs</h2>{faqs.map(([question, answer]) => <details key={question}><summary>{question}<span>+</span></summary><p>{answer}</p></details>)}</section>
       <section className="service-cta"><h2>Plan your visit with Guruji.</h2><p>Message us on WhatsApp for availability, preparation, and a suitable date.</p><a className="orange-button" href={bookingUrl} target="_blank" rel="noreferrer">✆ Request a consultation</a></section>
     </main>
-    <a className="call-float" href={`tel:${phone}`} aria-label="Call Guruji">✆</a><a className="call-popup" href={`tel:${phone}`}>Call Guruji<br /><small>{phone}</small></a>
+    <a className="call-float" href={`tel:${phone}`} aria-label="Call Guruji">✆</a>
+    <a
+      className="whatsapp-float"
+      href={bookingUrl}
+      target="_blank"
+      rel="noreferrer"
+      aria-label="Chat with Guruji on WhatsApp"
+    >
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 2a10 10 0 0 0-8.65 15l-1.1 4 4.1-1.08A10 10 0 1 0 12 2Zm5.82 14.2c-.25.7-1.43 1.27-1.97 1.35-.5.08-1.13.12-1.82-.1-.42-.14-.96-.32-1.66-.62-2.92-1.26-4.83-4.2-4.98-4.4-.15-.2-1.2-1.6-1.2-3.05 0-1.45.76-2.16 1.03-2.46.27-.3.59-.37.79-.37h.56c.18 0 .42-.07.66.51.25.6.84 2.04.91 2.19.08.15.13.33.02.54-.1.21-.16.33-.31.5-.15.18-.32.39-.45.52-.15.15-.3.32-.13.62.17.3.75 1.23 1.6 2 1.1.98 2.02 1.28 2.32 1.43.3.15.48.13.66-.08.18-.21.76-.89.96-1.2.2-.3.4-.25.67-.15.28.1 1.75.83 2.05.98.3.15.5.23.57.36.08.13.08.76-.17 1.46Z" />
+      </svg>
+    </a>
+    <a className="call-popup" href={`tel:${phone}`}>Call Guruji<br /><small>{phone}</small></a>
   </div>
 }

@@ -400,52 +400,6 @@ export default function App() {
             </div>
           </div>
         </section>
-        <section className="about section" id="about">
-          <div className="about-photo">
-            <img src={guruImage} alt="Kushavarta Kund at Trimbakeshwar" />
-            <div>
-              <small>PURE TRADITION</small>
-              <b>Pandit Krishna Guruji</b>
-              <span>
-                Authorised Senior Acharya, Kushawart Ghat, Trimbakeshwar
-              </span>
-            </div>
-          </div>
-          <div>
-            <p className="kicker">◉ ABOUT THE REVERED ACHARYA</p>
-            <h2>
-              Trimbakeshwar Pujari <em>Pandit Krishna Guruji</em>
-            </h2>
-            <p>
-              Pandit Krishna Guruji carries over{" "}
-              <b>45 years of unbroken Vedic tradition</b> at Trimbakeshwar
-              Jyotirlinga. Recognized as one of the most respected authorities
-              for Kaalsarp Dosh, Narayan Nagbali, and Tripindi rituals, he
-              adheres strictly to authentic Shastric Samhitas.
-            </p>
-            <p>
-              Devotees across India and overseas consult Guruji for accurate
-              horoscopic readings. Rather than rushed collective rituals, Guruji
-              ensures separate individual setups with pure hawan samagri, clear
-              guidance, and compassionate devotee care.
-            </p>
-            <div className="mini-perks">
-              {perks.slice(0, 6).map(([icon, title, text]) => (
-                <article key={title}>
-                  <i>{icon}</i>
-                  <b>{title}</b>
-                  <small>{text.split(". ")[0]}</small>
-                </article>
-              ))}
-            </div>
-            <div className="online">
-              <WhatsAppButton className="speak-guruji" href={`tel:${phone}`}>
-                Speak with Guruji Directly
-              </WhatsAppButton>
-              <span>● Guruji is available on call right now</span>
-            </div>
-          </div>
-        </section>
         <section className="services section" id="services">
           <p className="kicker">VEDIC RITUALS & ANUSHTHANS</p>
           <h2>Sanctified Puja Vidhis at Trimbakeshwar</h2>
@@ -496,6 +450,53 @@ export default function App() {
             ))}
           </div>
         </section>
+        <section className="about section" id="about">
+          <div className="about-photo">
+            <img src={guruImage} alt="Kushavarta Kund at Trimbakeshwar" />
+            <div>
+              <small>PURE TRADITION</small>
+              <b>Pandit Krishna Guruji</b>
+              <span>
+                Authorised Senior Acharya, Kushawart Ghat, Trimbakeshwar
+              </span>
+            </div>
+          </div>
+          <div>
+            <p className="kicker">◉ ABOUT THE REVERED ACHARYA</p>
+            <h2>
+              Trimbakeshwar Pujari <em>Pandit Krishna Guruji</em>
+            </h2>
+            <p>
+              Pandit Krishna Guruji carries over{" "}
+              <b>45 years of unbroken Vedic tradition</b> at Trimbakeshwar
+              Jyotirlinga. Recognized as one of the most respected authorities
+              for Kaalsarp Dosh, Narayan Nagbali, and Tripindi rituals, he
+              adheres strictly to authentic Shastric Samhitas.
+            </p>
+            <p>
+              Devotees across India and overseas consult Guruji for accurate
+              horoscopic readings. Rather than rushed collective rituals, Guruji
+              ensures separate individual setups with pure hawan samagri, clear
+              guidance, and compassionate devotee care.
+            </p>
+            <div className="mini-perks">
+              {perks.slice(0, 6).map(([icon, title, text]) => (
+                <article key={title}>
+                  <i>{icon}</i>
+                  <b>{title}</b>
+                  <small>{text.split(". ")[0]}</small>
+                </article>
+              ))}
+            </div>
+            <div className="online">
+              <WhatsAppButton className="speak-guruji" href={`tel:${phone}`}>
+                Speak with Guruji Directly
+              </WhatsAppButton>
+              <span>● Guruji is available on call right now</span>
+            </div>
+          </div>
+        </section>
+        
         <section className="section why">
           <p className="kicker">VEDIC AUTHENTICITY</p>
           <h2>Why Perform Puja With Pandit Krishna Guruji?</h2>
